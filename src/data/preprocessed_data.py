@@ -12,7 +12,8 @@ def data_preprocessing(data:pd.DataFrame):
     newdata = data.drop_duplicates()
     #trim the first two character
     newdata['history_segment'] = newdata['history_segment'].map(lambda x: str(x)[2:])
-    newdata['recency'] = str(newdata['recency'])
+    cols = ["recency", "mens", "womens","newbie"]
+    newdata[cols] = newdata[cols].astype(str)
     return newdata
 
 
