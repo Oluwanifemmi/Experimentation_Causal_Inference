@@ -1,0 +1,10 @@
+[Experimentation]
+name = "Experimentation / Causal inference"
+version = "0.1.0"
+description = "Experimetation if an additional feature is going to impact the company revenue"
+requires-python = ">= 3.1.0"
+dependencies = [
+    "pandas",
+    "numpy",
+    "scikit"
+]
