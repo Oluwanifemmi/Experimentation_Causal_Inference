@@ -7,9 +7,9 @@ logger = logging.getLogger(__name__)
 processed_data_path = "data/Processed_data/clean_processed_file.csv"
 
 
-def balance_check(data:pd.Dataframe):
-    data = pd.read_csv(data)
-    result = (data.groupby("segment")[["history","newbie"]]
+def balance_check(data_path: str):
+    data = pd.read_csv(data_path)
+    result = (data.groupby("segment")[["history", "newbie"]]
               .agg(["sum", "mean", "max", "min", "median", "std"]))
     return result
 

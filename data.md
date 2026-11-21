@@ -59,3 +59,19 @@ Because assignment was randomised and the SRM and balance checks passed, the nai
 | Women's E-Mail | 0.4726 | *to be added* |
 
 **Interpretation:** the interval for the men's email does not include 0, so the increase in spend is statistically significant at the 5% level. The data suggest the true effect is somewhere between about $0.53 and $1.17 per customer.
+
+CUPED was applied to `spend` using `history` (past spend) as the pre-experiment covariate.
+
+- **Variance reduction:** 0.0002 (about 0.02%)
+
+power analysis
+Sample size per group: 13536
+Baseline conversion rate: 0.00639
+Control size: 19081
+Baseline conversion: 0.00639
+Std of spend: 12.243
+treatment  conv_lift  conv_power  spend_diff  spend_power
+0  Mens E-Mail     0.0075         1.0      0.8512          1.0
+mde
+  treatment  n_treat  mde_conversion  mde_conversion_relative_%  mde_spend_$
+0  Mens E-Mail    19183          0.0025                    38.8686       0.3507
