@@ -12,7 +12,7 @@
 
 **Does sending marketing emails increase customer spending and conversion?**
 
-**TL;DR:** 
+**TL:DR:** 
 
 ---
 
@@ -27,6 +27,7 @@
 | **Secondary metrics** | `recency` |
 | **Guardrail metric** | `visit` |
 | **Pre-experiment covariate** | `history` (past spend, used for CUPED) |
+| ** Outcome**| Increase spend and conversion
 
 ### Hypotheses
 - **H0:** Emails have no effect on spend / conversion (difference = 0)

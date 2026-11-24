@@ -22,6 +22,6 @@ def srm_checks(data_path :str):
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     chi2, p_value = srm_checks(data_path)
-    print("Chi-square:", round(chi2, 4))
-    print("p-value:", round(p_value, 6))    
+    print(f"Chi-square:({chi2})")
+    print(f"p-value:({p_value})")    
 

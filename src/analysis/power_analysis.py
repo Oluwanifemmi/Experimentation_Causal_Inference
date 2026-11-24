@@ -17,7 +17,7 @@ def sample_size(data_path:str):
     control = newdata[newdata["segment"] == "No E-Mail"]
     baseline = control["conversion"].mean()
 
-    mde = 0.003           
+    mde = 0.02          
     alpha = 0.05
     power = 0.80
 
@@ -82,12 +82,12 @@ def observed_powerlist(data_path:str):
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
-    #nn_per_group, baseline = sample_size(data_path)
-   #print("Sample size per group:", int(round(nn_per_group)))
-    #print("Baseline conversion rate:", round(baseline, 5))
-    #n_control , baseline_conv, std_spend = statistic_power(data_path)
-    #print("Control size:", n_control)
-    #print("Baseline conversion:", round(baseline_conv, 5))
-    #print("Std of spend:", round(std_spend, 4))
+    nn_per_group, baseline = sample_size(data_path)
+    print("Sample size per group:", int(round(nn_per_group)))
+    print("Baseline conversion rate:", round(baseline, 5))
+    n_control , baseline_conv, std_spend = statistic_power(data_path)
+    print("Control size:", n_control)
+    print("Baseline conversion:", round(baseline_conv, 5))
+    print("Std of spend:", round(std_spend, 4))
     row = observed_powerlist(data_path)
     print(row)

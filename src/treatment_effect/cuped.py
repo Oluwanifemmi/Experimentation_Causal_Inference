@@ -53,7 +53,7 @@ def raw_adjusted_treatment(newdata:pd.DataFrame):
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     Vr , th, newdata = cuped_variance_reduction(data_path)
-    #print(f"Variance reduction:{Vr}")
-    #print(f"Theta:{th}")
+    print(f"Variance reduction:{Vr}")
+    print(f"Theta:{th}")
     treatment_comparison = raw_adjusted_treatment(newdata)
     print(treatment_comparison)

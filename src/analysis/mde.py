@@ -45,12 +45,6 @@ def mde_run(data_path:str):
 
 
 
-    #def mde_mean(n_per_group, std, alpha=0.05, power=0.80):
-        #Smallest difference in means detectable at this sample size    
-    #    d = TTestIndPower().solve_power(nobs1=n_per_group, alpha=alpha, power=power)
-    #    return d * std
-
-
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
