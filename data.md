@@ -265,4 +265,3 @@ With a baseline conversion rate of 0.64%, the men's email lift is about a 117% r
 4. The men's email shows the larger effect on both metrics. Whether it is significantly better than the women's email depends on the direct comparison in section 8.4.
 5. CUPED did not meaningfully reduce variance on this dataset.
 
-## 10. Limitations

@@ -12,7 +12,7 @@
 
 **Does sending marketing emails increase customer spending and conversion?**
 
-**TL;DR:** Yes. Both emails significantly increased spend and conversion compared with sending no email. The men's email raised spend by $0.85 per customer and conversion by 0.75 percentage points. The women's email raised spend by $0.47 per customer and conversion by 0.35 percentage points.
+** Yes. Both emails significantly increased spend and conversion compared with sending no email. The men's email raised spend by $0.85 per customer and conversion by 0.75 percentage points. The women's email raised spend by $0.47 per customer and conversion by 0.35 percentage points.
 
 ---
 
@@ -115,8 +115,6 @@ Each email is compared with the no-email control. Baseline conversion in the con
 4. The men's email shows the larger effect on both metrics. A direct test of men's email against women's email is needed to confirm that it is significantly better.
 5. CUPED did not meaningfully reduce variance on this dataset.
 
-## Limitations
-- 
 
 ---
 
@@ -124,10 +122,10 @@ Each email is compared with the no-email control. Baseline conversion in the con
 
 ```
 ├── data/
-│   └── Processed_data/    # cleaned data used in the analysis
+│   └── Processed_data/   
 ├── src/
-│   └── analysis/          # power analysis, descriptive statistics, hypothesis testing
-├── data.md                # full analysis report
+│   └── analysis/         
+├── data.md                
 ├── makefile
 ├── pyproject.toml
 ├── requirements.txt
